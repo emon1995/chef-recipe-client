@@ -1,5 +1,7 @@
 import React from "react";
 import ActiveLink from "../ActiveLink/ActiveLink";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo1.png";
 
 const Header = () => {
   return (
@@ -37,7 +39,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <Link to={`/`} className="btn btn-ghost normal-case items-center gap-1">
+          <img className="object-cover " src={logo} alt="logo" />
+          <h1 className="text-primary text-base mt-3">CHEF</h1>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

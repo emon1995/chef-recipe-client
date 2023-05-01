@@ -9,7 +9,9 @@ function App() {
       <div className="mx-12">
         <Header></Header>
       </div>
-      <Outlet />
+      <div className="min-h-[calc(100vh-348px)] mt-12 mx-16">
+        <Outlet />
+      </div>
       <Footer></Footer>
     </>
   );
