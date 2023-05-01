@@ -4,6 +4,8 @@ import App from "../App";
 import Home from "../components/Home/Home";
 import Blog from "../components/Blog/Blog";
 import Recipe from "../components/Recipe/Recipe";
+import Login from "../components/Login/Login";
+import Register from "../components/Register/Register";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +23,14 @@ const router = createBrowserRouter([
       {
         path: "/recipe",
         element: <Recipe></Recipe>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
     ],
   },
