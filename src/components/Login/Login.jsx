@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import googleImg from "../../assets/google.png";
 import githubImg from "../../assets/github.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -7,6 +7,11 @@ import { toast } from "react-hot-toast";
 
 const Login = () => {
   const { logIn, github, google } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  // console.log(location);
+
+  const from = location?.state?.from?.pathname || "/";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,6 +27,7 @@ const Login = () => {
         .then((result) => {
           const currentUser = result.user;
           // console.log(currentUser);
+          navigate(from, { replace: true });
           toast.success("Login Successful!!");
         })
         .catch((err) => {
@@ -38,6 +44,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         // console.log(user);
+        navigate(from, { replace: true });
         toast.success("Login Successful!!");
       })
       .catch((err) => {
@@ -50,6 +57,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         // console.log(user);
+        navigate(from, { replace: true });
         toast.success("Login Successful!!");
       })
       .catch((err) => {
@@ -84,7 +92,11 @@ const Login = () => {
           </form>
           <p>
             Don't have an account?
-            <Link className="text-primary " to={`/register`}>
+            <Link
+              state={location?.state}
+              className="text-primary "
+              to={`/register`}
+            >
               Sign Up
             </Link>
           </p>

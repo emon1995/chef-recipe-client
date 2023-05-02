@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import googleImg from "../../assets/google.png";
 import githubImg from "../../assets/github.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -7,6 +7,10 @@ import { toast } from "react-hot-toast";
 
 const Register = () => {
   const { register, profileName, github, google } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const from = location?.state?.from?.pathname || "/";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,6 +36,7 @@ const Register = () => {
             .catch((err) => {
               toast.error(err.message);
             });
+          navigate(from, { replace: true });
           toast.success("Register Successful!!");
         })
         .catch((err) => {
@@ -48,8 +53,9 @@ const Register = () => {
   const handleGoogle = () => {
     google()
       .then((result) => {
-        const user = result.user;
-        // console.log(user);
+        const currentUser = result.user;
+        console.log(currentUser);
+        navigate(from, { replace: true });
         toast.success("Login Successful!!");
       })
       .catch((err) => {
@@ -60,8 +66,9 @@ const Register = () => {
   const handleGitHub = () => {
     github()
       .then((result) => {
-        const user = result.user;
-        // console.log(user);
+        const currentUser = result.user;
+        console.log(currentUser);
+        navigate(from, { replace: true });
         toast.success("Login Successful!!");
       })
       .catch((err) => {
