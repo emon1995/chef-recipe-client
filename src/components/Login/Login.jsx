@@ -7,7 +7,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center ">
       <div>
-        <div className="p-8 border">
+        <div className="p-8 border shadow-xl rounded">
           <h1 className="text-2xl font-bold">Login</h1>
           <form>
             <input

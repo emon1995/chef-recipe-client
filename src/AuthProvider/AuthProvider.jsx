@@ -8,6 +8,7 @@ import {
   GithubAuthProvider,
   signInWithPopup,
   GoogleAuthProvider,
+  updateProfile,
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
@@ -23,27 +24,34 @@ const AuthProvider = ({ children }) => {
   const googleProvider = new GoogleAuthProvider();
 
   const register = (email, password) => {
-    setLoading(false);
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
+  const profileName = (name, photoURL) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photoURL,
+    });
+  };
+
   const logIn = (email, password) => {
-    setLoading(false);
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
-    setLoading(false);
+    setLoading(true);
     return signOut(auth);
   };
 
   const github = () => {
-    setLoading(false);
+    setLoading(true);
     return signInWithPopup(auth, githubProvider);
   };
 
   const google = () => {
-    setLoading(false);
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
 
@@ -66,6 +74,7 @@ const AuthProvider = ({ children }) => {
     logOut,
     github,
     google,
+    profileName,
   };
 
   return (
