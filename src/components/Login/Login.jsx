@@ -62,6 +62,7 @@ const Login = () => {
       <div>
         <div className="p-8 border shadow-xl rounded">
           <h1 className="text-2xl font-bold">Login</h1>
+
           <form onSubmit={handleSubmit}>
             <input
               type="email"
@@ -77,7 +78,7 @@ const Login = () => {
               className="input mb-3 input-bordered w-full max-w-xs"
             />
             <br />
-            <button className="btn btn-active btn-primary text-white w-full">
+            <button className="btn  btn-primary text-white w-full">
               Login
             </button>
           </form>

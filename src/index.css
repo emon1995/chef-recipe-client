@@ -11,5 +11,5 @@
 }
 
 .active {
-  @apply bg-primary text-white;
+  @apply bg-base-100 text-primary font-bold;
 }

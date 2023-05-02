@@ -73,14 +73,14 @@ const Header = () => {
           </label>
         )}
         {user && (
-          <button onClick={handleLogout} className="btn btn-active btn-primary">
+          <button onClick={handleLogout} className="btn btn-primary text-white">
             Logout
           </button>
         )}
         {!user && (
           <>
             <Link to="/login">
-              <button className="btn btn-active btn-primary">Login</button>
+              <button className="btn  btn-primary text-white">Login</button>
             </Link>
           </>
         )}

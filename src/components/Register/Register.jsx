@@ -103,7 +103,7 @@ const Register = () => {
               className="input mb-3 input-bordered w-full max-w-xs"
             />
             <br />
-            <button className="btn btn-active btn-primary text-white w-full">
+            <button className="btn  btn-primary text-white w-full">
               Register
             </button>
           </form>
