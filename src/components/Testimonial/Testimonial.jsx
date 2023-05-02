@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -8,37 +8,13 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
 const Testimonial = () => {
-  const feedbackReview = [
-    {
-      clientId: 1,
-      clientName: "John Doe",
-      clientImageUrl:
-        "https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814__340.jpg",
-      foodImages:
-        "https://cdn.pixabay.com/photo/2015/03/07/13/55/pasta-663096__340.jpg",
-      comment: "I had a delicious pizza slice and burger at this restaurant!",
-    },
-    {
-      clientId: 2,
-      clientName: "Jessica Lee",
-      clientImageUrl:
-        "https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866574__340.jpg",
-      foodImages:
-        "https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078__340.jpg",
-      comment:
-        "Both the rice and pasta were well-cooked - great value for money!",
-    },
-    {
-      clientId: 3,
-      clientName: "Samantha Chan",
-      clientImageUrl:
-        "https://cdn.pixabay.com/photo/2017/03/27/13/28/man-2178721__340.jpg",
-      foodImages:
-        "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062__340.jpg",
-      comment: "I loved the flavourful stir fry and curry sauce.",
-    },
-    // ...and many more...
-  ];
+  const [feedbackReview, setFeedbackReview] = useState([]);
+
+  useEffect(() => {
+    fetch("comment.json")
+      .then((res) => res.json())
+      .then((data) => setFeedbackReview(data));
+  }, []);
 
   return (
     <div className="text-center my-20">

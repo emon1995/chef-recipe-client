@@ -50,7 +50,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to={`/`} className="btn btn-ghost normal-case items-center gap-1">
-          <img className="object-cover " src={logo} alt="logo" />
+          <img className="object-cover  lg:w-24 " src={logo} alt="logo" />
           <h1 className="text-primary text-base mt-3">CHEF</h1>
         </Link>
       </div>
@@ -64,7 +64,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end gap-2">
+      <div className="navbar-end gap-0 lg:gap-2">
         {user && (
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full" title={user?.displayName}>
@@ -73,14 +73,17 @@ const Header = () => {
           </label>
         )}
         {user && (
-          <button onClick={handleLogout} className="btn btn-primary text-white">
+          <button
+            onClick={handleLogout}
+            className="btn btn-primary btn-xs lg:btn-md text-white"
+          >
             Logout
           </button>
         )}
         {!user && (
           <>
             <Link to="/login">
-              <button className="btn  btn-primary text-white">Login</button>
+              <button className="btn btn-primary text-white ">Login</button>
             </Link>
           </>
         )}

@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/kewaubwi/img60041.jpg?mode=crop&width=660&height=440",
+        "name": "Angelina Bertozzi",
+        "experience": 10,
+        "recipes": 30,
+        "likes": 1000,
+        "description": "A celebrated Rome-based chef known for her contemporary twists on classic Italian dishes."
+    },
+    {
+        "id": 2,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/5e1d5vhm/img47051.whqc_660x440q90.webp",
+        "name": "Domenico Di Clemente",
+        "experience": 20,
+        "recipes": 50,
+        "likes": 700,
+        "description": "An acclaimed Tuscan chef specializing in traditional rustic fare made with locally sourced ingredients."
+    },
+    {
+        "id": 3,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/wrzeeg0g/img44821.whqc_660x440q90.webp",
+        "name": "Giacomo Galli",
+        "experience": 25,
+        "recipes": 100,
+        "likes": 1200,
+        "description": "A former Michelin-starred chef now creating bold, inventive Mediterranean-inspired dishes at his eponymous restaurant in Milan."
+    },
+    {
+        "id": 4,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/cpbo4izv/img62766.jpg?mode=crop&width=660&height=440",
+        "name": "Cristina Bowerman",
+        "experience": 20,
+        "recipes": 25,
+        "likes": 400,
+        "description": "An award-winning sommelier turned chef known for fusing elements of Italian tradition with international influences in her creative plates."
+    },
+    {
+        "id": 5,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/5kzaigal/img49737.jpg?mode=crop&width=660&height=440",
+        "name": "Marcello Trentini",
+        "experience": 30,
+        "recipes": 15,
+        "likes": 200,
+        "description": "A Piedmontese chef focused on preserving local culinary traditions by using ancient grains and heirloom produce in updated versions of classic dishes."
+    },
+    {
+        "id": 6,
+        "img": "https://media-cdn2.greatbritishchefs.com/media/5qidfz3l/img67050.jpg?mode=crop&width=660&height=440",
+        "name": "Andreina De Fazi",
+        "experience": 15,
+        "recipes": 25,
+        "likes": 150,
+        "description": "A respected Sicilian pastry chef creating traditional sweets with fresh, seasonal ingredients and a modern touch."
+    }
+]

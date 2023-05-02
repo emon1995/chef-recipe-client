@@ -1,0 +1,162 @@
+[
+    {
+      "id": 1,
+      "name": "Penne alla Vodka",
+      "ingredients": ["penne pasta", "vodka", "tomato sauce", "heavy cream", "garlic"],
+      "cookingMethod": "1. Cook pasta according to package instructions. \n2. In a separate pan, sauté garlic in olive oil. \n3. Add tomato sauce and vodka, simmer for 10 minutes. \n4. Stir in heavy cream and cook for additional 5 minutes. \n5. Toss cooked pasta with sauce and serve.",
+      "rating": 4.5,
+      "chefId": 1
+    },
+    {
+      "id": 2,
+      "name": "Spaghetti Carbonara",
+      "ingredients": ["spaghetti", "bacon", "eggs", "parmesan cheese", "black pepper"],
+      "cookingMethod": "1. Cook spaghetti according to package instructions. \n2. In a separate pan, cook bacon until crispy. \n3. In a bowl, whisk eggs, parmesan cheese, and black pepper. \n4. Drain pasta and add to the bacon pan. \n5. Turn off the heat and add the egg mixture, stirring quickly to prevent curdling. \n6. Serve immediately.",
+      "rating": 4.7,
+      "chefId": 1
+    },
+    {
+      "id": 3,
+      "name": "Margherita Pizza",
+      "ingredients": ["pizza dough", "tomatoes", "fresh mozzarella", "basil leaves", "olive oil"],
+      "cookingMethod": "1. Preheat oven to 450°F. \n2. Roll out pizza dough and place on a baking sheet. \n3. Spread tomato sauce on top of the dough. \n4. Arrange sliced mozzarella on top of the sauce. \n5. Drizzle olive oil on top of the cheese. \n6. Bake for 10-15 minutes or until crust is crispy. \n7. Top with fresh basil leaves before serving.",
+      "rating": 4.8,
+      "chefId": 1
+    },
+    {
+      "id": 4,
+      "name": "Lasagna",
+      "ingredients": ["lasagna noodles", "ground beef", "tomato sauce", "ricotta cheese", "mozzarella cheese"],
+      "cookingMethod": "1. Preheat oven to 375°F. \n2. Cook lasagna noodles according to package instructions. \n3. In a separate pan, cook ground beef until browned. \n4. Mix ricotta cheese with an egg and parsley. \n5. Spread a layer of tomato sauce on the bottom of a baking dish. \n6. Layer noodles, meat sauce, and ricotta mixture in the dish. \n7. Top with mozzarella cheese. \n8. Bake for 25-30 minutes or until cheese is melted and bubbly.",
+      "rating": 4.6,
+      "chefId": 2
+    },
+    {
+      "id": 5,
+      "name": "Chicken Parmesan",
+      "ingredients": ["chicken breast", "breadcrumbs", "egg", "tomato sauce", "mozzarella cheese"],
+      "cookingMethod": "1. Brown chicken thighs in olive oil. \n2. Remove chicken from the pan and set aside. \n3. Sauté onions, garlic, and red bell pepper in the same pan. \n4. Add canned tomatoes and simmer for 10 minutes. \n5. Return chicken to the pan and cook until done. \n6. Serve hot.",
+      "rating": 4.4,
+      "chefId": 2
+      },
+      {
+      "id": 6,
+      "name": "Tiramisu",
+      "ingredients": ["ladyfingers", "mascarpone cheese", "egg yolks", "sugar", "espresso"],
+      "cookingMethod": "1. Brew espresso and let cool. \n2. Beat egg yolks and sugar until pale and fluffy. \n3. Fold mascarpone cheese into the egg mixture. \n4. Dip ladyfingers in the cooled espresso and layer in a dish. \n5. Spread mascarpone mixture on top of the ladyfingers. \n6. Repeat layers of ladyfingers and mascarpone mixture. \n7. Chill in the refrigerator for at least 2 hours before serving.",
+      "rating": 4.9,
+      "chefId": 2
+      },
+      {
+      "id": 7,
+      "name": "Minestrone Soup",
+      "ingredients": ["onion", "carrots", "celery", "potatoes", "canned tomatoes"],
+      "cookingMethod": "1. Heat olive oil in a pot. \n2. Add chopped onion, carrots, and celery, and sauté until softened. \n3. Add chopped potatoes and canned tomatoes. \n4. Cover with water and bring to a boil. \n5. Reduce heat and let simmer for 30-40 minutes. \n6. Serve hot.",
+      "rating": 4.2,
+      "chefId": 3
+      },
+      {
+      "id": 8,
+      "name": "Chicken Cacciatore",
+      "ingredients": ["chicken thighs", "tomatoes", "onion", "garlic", "red bell pepper"],
+      "cookingMethod": "1. Brown chicken thighs in olive oil. \n2. Remove chicken from the pan and set aside. \n3. Sauté onions, garlic, and red bell pepper in the same pan. \n4. Add canned tomatoes and simmer for 10 minutes. \n5. Return chicken to the pan and cook until done. \n6. Serve hot.",
+      "rating": 4.3,
+      "chefId": 3
+      },
+      {
+      "id": 9,
+      "name": "Pesto Pasta",
+      "ingredients": ["pasta", "basil leaves", "pine nuts", "garlic", "parmesan cheese"],
+      "cookingMethod": "1. Cook pasta according to package instructions. \n2. In a food processor, blend basil leaves, pine nuts, garlic, and parmesan cheese until smooth. \n3. Toss cooked pasta with the pesto sauce. \n4. Serve hot.",
+      "rating": 4.7,
+      "chefId": 3
+      },
+      {
+      "id": 10,
+      "name": "Risotto",
+      "ingredients": ["arborio rice", "white wine", "chicken broth", "onion", "parmesan cheese"],
+      "cookingMethod": "1. Sauté onions in olive oil. \n2. Add arborio rice and toast for 2 minutes. \n3. Add white wine and cook until it evaporates. \n4. Add chicken broth one ladleful at a time, stirring until absorbed. \n5. Repeat until rice is cooked and creamy. \n6. Stir in parmesan cheese. \n7. Serve hot.",
+      "rating": 4.5,
+      "chefId": 4
+      },
+      {
+      "id": 11,
+      "name": "Caprese Salad",
+      "ingredients": ["tomatoes", "mozzarella cheese", "basil leaves", "olive oil", "balsamic vinegar"],
+      "cookingMethod": "1. Slice tomatoes and mozzarella cheese. \n2. Arrange on a plate, alternating tomato and cheese slices. \n3. Top with basil leaves. \n4. Drizzle with olive oil and balsamic vinegar. \n5. Serve cold.",
+      "rating": 4.8,
+      "chefId": 4
+      },
+      {
+      "id": 12,
+      "name": "Bolognese Sauce",
+      "ingredients": ["ground beef", "tomato sauce", "onion", "carrots", "celery"],
+      "cookingMethod": "1. Sauté onion, carrots, and celery in olive oil. \n2. Add ground beef and cook until browned. \n3. Add tomato sauce and simmer for 30-40 minutes. \n4. Serve hot over pasta.",
+      "rating": 4.6,
+      "chefId": 4
+      },
+      {
+      "id": 13,
+      "name": "Bruschetta",
+      "ingredients": ["bread", "tomatoes", "garlic", "basil leaves", "olive oil"],
+      "cookingMethod": "1. Toast slices of bread. \n2. Rub with garlic. \n3. Top with chopped tomatoes and basil leaves. \n4. Drizzle with olive oil. \n5. Serve hot.",
+      "rating": 4.1,
+      "chefId": 5
+      },
+      {
+      "id": 14,
+      "name": "Osso Buco",
+      "ingredients": ["veal shanks", "onion", "carrots", "celery", "canned tomatoes"],
+      "cookingMethod": "1. Sauté onion, carrots, and celery in olive oil. \n2. Brown veal shanks in the same pan. \n3. Add canned tomatoes and simmer for 2-3 hours. \n4. Serve hot over polenta.",
+      "rating": 4.9,
+      "chefId": 5
+      },
+      {
+      "id": 15,
+      "name": "Linguine with Clam Sauce",
+      "ingredients": ["linguine", "clams", "garlic", "white wine", "butter"],
+      "cookingMethod": "1. Cook linguine according to package instructions. \n2. Sauté garlic in butter. \n3. Add clams and white wine. \n4. Simmer until clams open. \n5. Toss cooked linguine with the clam sauce. \n6. Serve hot.",
+      "rating": 4.4,
+      "chefId": 5
+      },
+      {
+      "id": 16,
+      "name": "Gnocchi",
+      "ingredients": ["potatoes", "flour", "egg", "parmesan cheese", "nutmeg"],
+      "cookingMethod": "1. Cook potatoes until tender. \n2. Mash potatoes and let cool. \n3. Add flour, egg, parmesan cheese, and nutmeg. \n4. Mix until a dough forms. \n5. Roll out dough and cut into small pieces. \n6. Boil gnocchi until they float to the surface. \n7. Serve hot with your choice of sauce.",
+      "rating": 4.3,
+      "chefId": 6
+      },
+      {
+      "id" : 17,
+      "name": "Tiramisu",
+      "ingredients": ["ladyfingers", "mascarpone cheese", "espresso", "sugar", "cocoa powder"],
+      "cookingMethod": "1. Dip ladyfingers in espresso. \n2. Layer them in a dish. \n3. Mix mascarpone cheese and sugar. \n4. Spread over the ladyfingers. \n5. Sprinkle with cocoa powder. \n6. Refrigerate for a few hours. \n7. Serve cold.",
+      "rating": 4.7,
+      "chefId": 6
+      },
+      {
+      "id": 18,
+      "name": "Pesto",
+      "ingredients": ["basil leaves", "pine nuts", "garlic", "parmesan cheese", "olive oil"],
+      "cookingMethod": "1. Blend basil leaves, pine nuts, garlic, and parmesan cheese in a food processor. \n2. Slowly add olive oil while blending. \n3. Serve with your choice of pasta.",
+      "rating": 4.2,
+      "chefId": 6
+      },
+      {
+      "id": 19,
+      "name": "Minestrone Soup",
+      "ingredients": ["cannellini beans", "carrots", "celery", "potatoes", "tomato paste"],
+      "cookingMethod": "1. Sauté carrots, celery, and potatoes in olive oil. \n2. Add cannellini beans and tomato paste. \n3. Simmer for 30-40 minutes. \n4. Serve hot.",
+      "rating": 4.0,
+      "chefId": 1
+      },
+      {
+      "id": 20,
+      "name": "Fettuccine Alfredo",
+      "ingredients": ["fettuccine", "heavy cream", "butter", "parmesan cheese", "black pepper"],
+      "cookingMethod": "1. Cook fettuccine according to package instructions. \n2. In a separate pan, melt butter and add heavy cream. \n3. Add parmesan cheese and black pepper. \n4. Toss cooked fettuccine with the Alfredo sauce. \n5. Serve hot.",
+      "rating": 4.5,
+      "chefId": 3
+      }
+      ]

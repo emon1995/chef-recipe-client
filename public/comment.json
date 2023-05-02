@@ -1,32 +1,30 @@
 [
     {
-        "clientId": 1,
-        "clientName": "John Doe",
-        "clientImageUrl": "http://localhost/images/john_doe.png",
-        "foodImages": [
-            "http://localhost/images/pizza-slice.jpg",
-            "http://localhost/images/hamburger-deluxe.jpg"
-        ],
-        "comment": "I had a delicious pizza slice and burger at this restaurant!"
+      "clientId": 1,
+      "clientName": "John Doe",
+      "clientImageUrl":
+        "https://cdn.pixabay.com/photo/2016/11/21/14/53/man-1845814__340.jpg",
+      "foodImages":
+        "https://cdn.pixabay.com/photo/2015/03/07/13/55/pasta-663096__340.jpg",
+      "comment": "I had a delicious pizza slice and burger at this restaurant!"
     },
     {
-        "clientId": 2,
-        "clientName": "Jessica Lee",
-        "clientImageUrl": "http://localhost/images/jessica_lee.jpg",
-        "foodImages": [
-            "http://localhost/images/steamed-rice.jpg",
-            "http://localhost/images/spaghetti-meatballs.jpg"
-        ],
-        "comment": "Both the rice and pasta were well-cooked - great value for money!"
+      "clientId": 2,
+      "clientName": "Jessica Lee",
+      "clientImageUrl":
+        "https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866574__340.jpg",
+      "foodImages":
+        "https://cdn.pixabay.com/photo/2018/07/18/19/12/pasta-3547078__340.jpg",
+      "comment":
+        "Both the rice and pasta were well-cooked - great value for money!"
     },
     {
-        "clientId": 3,
-        "clientName": "Samantha Chan",
-        "clientImageUrl": "http://localhost/images/samantha_chan.jpg",
-        "foodImages": [
-            "http://localhost/images/beef-stir-fry.jpg",
-            "http://localhost/images/vegetable-curry.jpg"
-        ],
-        "comment": "I loved the flavorful stir fry and curry sauce."
+      "clientId": 3,
+      "clientName": "Samantha Chan",
+      "clientImageUrl":
+        "https://cdn.pixabay.com/photo/2017/03/27/13/28/man-2178721__340.jpg",
+      "foodImages":
+        "https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062__340.jpg",
+      "comment": "I loved the flavourful stir fry and curry sauce."
     }
-]
+  ]

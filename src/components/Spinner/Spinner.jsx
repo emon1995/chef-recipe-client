@@ -2,13 +2,10 @@ import React from "react";
 
 const Spinner = () => {
   return (
-    <div
-      className="inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
-      role="status"
-    >
-      <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-        Loading...
-      </span>
+    <div className="flex justify-center items-center h-[calc(100vh-68px)]">
+      <p className="text-7xl font-thin">L</p>
+      <div className="w-10 h-10 border-8 border-dashed rounded-full animate-spin mt-5 border-blue-400"></div>
+      <p className="text-7xl font-thin">ading....</p>
     </div>
   );
 };
