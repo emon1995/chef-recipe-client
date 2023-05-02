@@ -6,11 +6,13 @@ import Blog from "../components/Blog/Blog";
 import Recipe from "../components/Recipe/Recipe";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
