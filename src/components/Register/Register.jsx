@@ -32,6 +32,7 @@ const Register = () => {
             .catch((err) => {
               toast.error(err.message);
             });
+          toast.success("Register Successful!!");
         })
         .catch((err) => {
           toast.error(err.message);
