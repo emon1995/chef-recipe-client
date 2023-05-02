@@ -1,5 +1,6 @@
 import React from "react";
 import Pdf from "react-to-pdf";
+import { BsDownload } from "react-icons/bs";
 
 const Blog = () => {
   const ref = React.createRef();
@@ -13,6 +14,9 @@ const Blog = () => {
   return (
     <div className="my-10">
       <div>
+        <h1 className="bg-base-200 rounded-full text-center mb-6">
+          Download This page pdf
+        </h1>
         <div className="text-center mb-10">
           <Pdf
             targetRef={ref}
@@ -28,7 +32,7 @@ const Blog = () => {
             "
                 onClick={toPdf}
               >
-                Generate Pdf
+                Generate Pdf <BsDownload />
               </button>
             )}
           </Pdf>
