@@ -11,7 +11,7 @@ const Testimonial = () => {
   const [feedbackReview, setFeedbackReview] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/comments")
+    fetch("https://chef-recipe-server-zeta.vercel.app/comments")
       .then((res) => res.json())
       .then((data) => setFeedbackReview(data));
   }, []);

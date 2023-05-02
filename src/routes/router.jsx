@@ -31,7 +31,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/chefs/${params.id}`),
+          fetch(
+            `https://chef-recipe-server-zeta.vercel.app/chefs/${params.id}`
+          ),
       },
       {
         path: "/login",

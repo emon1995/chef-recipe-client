@@ -15,7 +15,7 @@ const Recipe = ({ id }) => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/recipes/${id}`)
+    fetch(`https://chef-recipe-server-zeta.vercel.app/recipes/${id}`)
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
