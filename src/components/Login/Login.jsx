@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import google from "../../assets/google.png";
-import github from "../../assets/github.png";
+import googleImg from "../../assets/google.png";
+import githubImg from "../../assets/github.png";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-hot-toast";
 
 const Login = () => {
-  const { logIn } = useContext(AuthContext);
+  const { logIn, github, google } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,6 +31,30 @@ const Login = () => {
 
     form.email.value = "";
     form.password.value = "";
+  };
+
+  const handleGoogle = () => {
+    google()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        toast.success("Login Successful!!");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
+  };
+
+  const handleGitHub = () => {
+    github()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        toast.success("Login Successful!!");
+      })
+      .catch((err) => {
+        toast.error(err.message);
+      });
   };
 
   return (
@@ -64,12 +88,18 @@ const Login = () => {
             </Link>
           </p>
         </div>
-        <div className="flex items-center justify-start gap-8 border rounded-full p-4 mt-8">
-          <img className="w-8 h-8" src={google} alt="google" />
+        <div
+          onClick={handleGoogle}
+          className="flex items-center justify-start gap-8 border rounded-full p-4 mt-8 cursor-pointer"
+        >
+          <img className="w-8 h-8" src={googleImg} alt="google" />
           <p>Continue with Google</p>
         </div>
-        <div className="flex items-center justify-start gap-8 border rounded-full p-4 my-4">
-          <img className="w-8 h-8" src={github} alt="google" />
+        <div
+          onClick={handleGitHub}
+          className="flex items-center justify-start gap-8 border rounded-full p-4 my-4 cursor-pointer"
+        >
+          <img className="w-8 h-8" src={githubImg} alt="google" />
           <p>Continue with GitHub</p>
         </div>
       </div>
