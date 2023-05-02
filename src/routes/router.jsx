@@ -3,10 +3,10 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../components/Home/Home";
 import Blog from "../components/Blog/Blog";
-import Recipe from "../components/Recipe/Recipe";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import ChefRecipe from "../components/ChefRecipe/ChefRecipe";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +23,10 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path: "/recipe",
-        element: <Recipe></Recipe>,
+        path: "/chef_recipe/:id",
+        element: <ChefRecipe></ChefRecipe>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/chefs/${params.id}`),
       },
       {
         path: "/login",

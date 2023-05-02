@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineLike } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const ChefCard = () => {
   const [chefs, setChefs] = useState([]);
 
   useEffect(() => {
-    fetch("chef.json")
+    fetch("http://localhost:5000/chefs")
       .then((res) => res.json())
       .then((data) => setChefs(data));
   }, []);
@@ -36,9 +37,11 @@ const ChefCard = () => {
                 </div>
 
                 <div className="mt-4 ">
-                  <button className="btn btn-primary text-white">
-                    View Recipes
-                  </button>
+                  <Link to={`/chef_recipe/${chef.id}`}>
+                    <button className="btn btn-primary text-white">
+                      View Recipes
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

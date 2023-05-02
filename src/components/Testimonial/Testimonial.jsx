@@ -11,7 +11,7 @@ const Testimonial = () => {
   const [feedbackReview, setFeedbackReview] = useState([]);
 
   useEffect(() => {
-    fetch("comment.json")
+    fetch("http://localhost:5000/comments")
       .then((res) => res.json())
       .then((data) => setFeedbackReview(data));
   }, []);
