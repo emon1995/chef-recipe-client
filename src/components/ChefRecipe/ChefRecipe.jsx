@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineLike } from "react-icons/ai";
 import { useLoaderData, useParams } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
+import LazyLoad from "react-lazy-load";
 
 const ChefRecipe = () => {
   const chef = useLoaderData();
@@ -12,11 +13,14 @@ const ChefRecipe = () => {
   return (
     <div>
       <div className="hero lg:max-h-screen bg-base-200 my-20">
-        <div className="hero-content gap-8 flex-col lg:flex-row">
-          <img
-            src={chef?.img}
-            className="md:max-w-sm rounded-lg shadow-2xl object-cover"
-          />
+        <div className="hero-content lg:gap-32 flex-col lg:flex-row">
+          <LazyLoad height={262} width={300} threshold={0.95}>
+            <img
+              src={chef?.img}
+              className="md:max-w-sm rounded-lg shadow-2xl object-cover"
+            />
+          </LazyLoad>
+
           <div>
             <h1 className="text-5xl font-bold">{chef?.name}</h1>
             <p className="py-6">{chef?.description}</p>

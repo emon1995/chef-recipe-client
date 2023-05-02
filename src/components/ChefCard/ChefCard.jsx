@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineLike } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import LazyLoad from "react-lazy-load";
 
 const ChefCard = () => {
   const [chefs, setChefs] = useState([]);
@@ -20,7 +21,9 @@ const ChefCard = () => {
           return (
             <div key={chef.id} className="card w-full bg-base-100 shadow-xl">
               <figure>
-                <img src={chef?.img} alt="Shoes" />
+                <LazyLoad height={262} width={500} threshold={0.95}>
+                  <img src={chef?.img} alt="Shoes" />
+                </LazyLoad>
               </figure>
               <div className="p-8">
                 <div className="flex items-center justify-between ">
