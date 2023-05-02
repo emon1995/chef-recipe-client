@@ -3,6 +3,7 @@ import Spinner from "../Spinner/Spinner";
 import Banner from "../Banner/Banner";
 import Info from "../Info/Info";
 import Service from "../Service/Service";
+import Testimonial from "../Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner></Banner>
       <Info></Info>
       <Service></Service>
+      <Testimonial></Testimonial>
       <Spinner></Spinner>
     </div>
   );

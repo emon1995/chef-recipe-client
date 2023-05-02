@@ -1,0 +1,32 @@
+[
+    {
+        "clientId": 1,
+        "clientName": "John Doe",
+        "clientImageUrl": "http://localhost/images/john_doe.png",
+        "foodImages": [
+            "http://localhost/images/pizza-slice.jpg",
+            "http://localhost/images/hamburger-deluxe.jpg"
+        ],
+        "comment": "I had a delicious pizza slice and burger at this restaurant!"
+    },
+    {
+        "clientId": 2,
+        "clientName": "Jessica Lee",
+        "clientImageUrl": "http://localhost/images/jessica_lee.jpg",
+        "foodImages": [
+            "http://localhost/images/steamed-rice.jpg",
+            "http://localhost/images/spaghetti-meatballs.jpg"
+        ],
+        "comment": "Both the rice and pasta were well-cooked - great value for money!"
+    },
+    {
+        "clientId": 3,
+        "clientName": "Samantha Chan",
+        "clientImageUrl": "http://localhost/images/samantha_chan.jpg",
+        "foodImages": [
+            "http://localhost/images/beef-stir-fry.jpg",
+            "http://localhost/images/vegetable-curry.jpg"
+        ],
+        "comment": "I loved the flavorful stir fry and curry sauce."
+    }
+]
