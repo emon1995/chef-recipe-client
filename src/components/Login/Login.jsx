@@ -13,7 +13,7 @@ const Login = () => {
     const form = e.target;
     let email = form.email.value;
     let password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
     if ((!email, !password)) {
       return toast.error("Input Field is empty");
@@ -21,7 +21,7 @@ const Login = () => {
       logIn(email, password)
         .then((result) => {
           const currentUser = result.user;
-          console.log(currentUser);
+          // console.log(currentUser);
           toast.success("Login Successful!!");
         })
         .catch((err) => {
@@ -37,7 +37,7 @@ const Login = () => {
     google()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         toast.success("Login Successful!!");
       })
       .catch((err) => {
@@ -49,7 +49,7 @@ const Login = () => {
     github()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         toast.success("Login Successful!!");
       })
       .catch((err) => {

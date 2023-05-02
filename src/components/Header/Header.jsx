@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import ActiveLink from "../ActiveLink/ActiveLink";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo1.png";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-hot-toast";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log("user", user);
+
+  const handleLogout = () => {
+    logOut()
+      .then((result) => {})
+      .catch((err) => {
+        toast.error(err.message);
+      });
+  };
+
   return (
     <div className="navbar bg-base-100 ">
       <div className="navbar-start">
@@ -34,9 +47,6 @@ const Header = () => {
             <li tabIndex={0}>
               <ActiveLink to="/blog">Blog</ActiveLink>
             </li>
-            <li>
-              <ActiveLink to="/recipe">Recipe</ActiveLink>
-            </li>
           </ul>
         </div>
         <Link to={`/`} className="btn btn-ghost normal-case items-center gap-1">
@@ -52,17 +62,28 @@ const Header = () => {
           <li tabIndex={0}>
             <ActiveLink to="/blog">Blog</ActiveLink>
           </li>
-          <li>
-            <ActiveLink to="/recipe">Recipe</ActiveLink>
-          </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full" title="Emon">
-            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-          </div>
-        </label>
+      <div className="navbar-end gap-2">
+        {user && (
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full" title={user?.displayName}>
+              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            </div>
+          </label>
+        )}
+        {user && (
+          <button onClick={handleLogout} className="btn btn-active btn-primary">
+            Logout
+          </button>
+        )}
+        {!user && (
+          <>
+            <Link to="/login">
+              <button className="btn btn-active btn-primary">Login</button>
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

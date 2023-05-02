@@ -49,7 +49,7 @@ const Register = () => {
     google()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         toast.success("Login Successful!!");
       })
       .catch((err) => {
@@ -61,7 +61,7 @@ const Register = () => {
     github()
       .then((result) => {
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         toast.success("Login Successful!!");
       })
       .catch((err) => {
