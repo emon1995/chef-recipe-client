@@ -77,18 +77,6 @@ const Blog = () => {
           </div>
           <div>
             <h1 className="font-bold">
-              Q: Tell us the difference between nodejs and express js.
-            </h1>
-            <p>
-              A: Node js is platform for building the i/o application which are
-              server-side event-driven and made using javascript. Express js is
-              a minimal and flexible node js web application framework.
-              providing a robust set of features for building single and multi
-              page, hybrid web application.
-            </p>
-          </div>
-          <div>
-            <h1 className="font-bold">
               Q: What is a custom hook, and why will you create a custom hook?
             </h1>
             <p>
