@@ -66,8 +66,12 @@ const Header = () => {
       </div>
       <div className="navbar-end gap-0 lg:gap-2">
         {user && (
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full" title={user?.displayName}>
+          <label
+            tabIndex={0}
+            className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom tooltip-primary text-white"
+            data-tip={user?.displayName}
+          >
+            <div className="w-10 rounded-full ">
               {user?.photoURL && <img src={user?.photoURL} />}
             </div>
           </label>

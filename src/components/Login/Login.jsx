@@ -9,7 +9,10 @@ const Login = () => {
   const { logIn, github, google } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
-  // console.log(location);
+
+  if (location.pathname === `/login`) {
+    document.title = "Login";
+  }
 
   const from = location?.state?.from?.pathname || "/";
 

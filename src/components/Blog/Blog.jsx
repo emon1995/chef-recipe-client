@@ -1,9 +1,16 @@
 import React from "react";
 import Pdf from "react-to-pdf";
 import { BsDownload } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 const Blog = () => {
   const ref = React.createRef();
+
+  const location = useLocation();
+
+  if (location.pathname === "/blog") {
+    document.title = "Food Chef | Blog";
+  }
 
   const options = {
     orientation: "landscape",

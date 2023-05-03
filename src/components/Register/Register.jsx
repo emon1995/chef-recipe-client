@@ -10,6 +10,10 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  if (location.pathname === `/register`) {
+    document.title = "Register";
+  }
+
   const from = location?.state?.from?.pathname || "/";
 
   const handleSubmit = (e) => {

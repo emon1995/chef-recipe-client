@@ -6,8 +6,15 @@ import Service from "../Service/Service";
 import Testimonial from "../Testimonial/Testimonial";
 import Subscribe from "../Subscribe/Subscribe";
 import ChefCard from "../ChefCard/ChefCard";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+  const location = useLocation();
+
+  if (location.pathname === "/") {
+    document.title = "Food Chef | Home";
+  }
+
   return (
     <div>
       <Banner></Banner>

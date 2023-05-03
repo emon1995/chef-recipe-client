@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiOutlineLike } from "react-icons/ai";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import Recipe from "../Recipe/Recipe";
 import LazyLoad from "react-lazy-load";
 
 const ChefRecipe = () => {
   const chef = useLoaderData();
-
   const { id } = useParams();
-  // console.log(id);
+
+  const location = useLocation();
+
+  if (location.pathname === `/chef_recipe/${id}`) {
+    document.title = chef?.name;
+  }
 
   return (
     <div>
